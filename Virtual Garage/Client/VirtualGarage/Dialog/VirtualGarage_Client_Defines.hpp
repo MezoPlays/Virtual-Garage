@@ -2,7 +2,7 @@
 
  	Name: VirtualGarage_Client_Defines.hpp
  	Author(s): Shix
-  Copyright (c) 2016 Shix and WolfkillArcadia
+  	Copyright (c) 2016 Shix
  	Description: Defines for Virtual Garage
 
 */
