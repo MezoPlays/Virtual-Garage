@@ -1497,15 +1497,6 @@ class VirtGarageRscButtonMenuOK
 		1
 	};
 };
-class RscButtonMenuCancel
-{
-	idc = 2;
-	shortcuts[] =
-	{
-		"0x00050000 + 1"
-	};
-	text = "Cancel";
-};
 class VirtGarageRscControlsGroup
 {
 	deletable = 0;
