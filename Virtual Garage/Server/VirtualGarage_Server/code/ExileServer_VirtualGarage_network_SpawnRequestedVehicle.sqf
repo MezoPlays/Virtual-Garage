@@ -79,12 +79,12 @@ try
 	_GivePlayerPinCode = getNumber (missionconfigfile >> "VirtualGarageSettings" >> "VirtualGarage_GivePlayerPinCode");
 	if (_GivePlayerPinCode == 1) then {
 		_msg = Format["Vehicle Successfully Retrieved PIN Code:%1",_pinCode];
-		[_sessionID, "notificationRequest", ["Success", [_msg]]] call ExileServer_system_network_send_to;
+		[_sessionID, "toastRequest", ["SuccessTitleOnly", [_msg]]] call ExileServer_system_network_send_to;
 	}
 	else
 	{
 		_msg = Format["Vehicle Successfully Retrieved"];
-		[_sessionID, "notificationRequest", ["Success", [_msg]]] call ExileServer_system_network_send_to;
+		[_sessionID, "toastRequest", ["SuccessTitleOnly", [_msg]]] call ExileServer_system_network_send_to;
 	};
 	_vehicleObject call ExileServer_object_vehicle_database_insert;
 	_vehicleObject call ExileServer_object_vehicle_database_update;

@@ -10,10 +10,10 @@ private ["_response","_this"];
 _response = _this select 0;
 if(_response == "true")then
 {
-  ["Success",[format["Vehicle Successfully Stored"]]] call ExileClient_gui_notification_event_addNotification;
+    ["SuccessTitleAndText", ["Virtual Garage", "Vehicle Stored!"]] call ExileClient_gui_toaster_addTemplateToast;
 }
 else
 {
-  ["Whoops",[format["The Vehicle Could Not Be Stored"]]] call ExileClient_gui_notification_event_addNotification;
+    ["ErrorTitleAndText", ["Virtual Garage", "Vehicle Could Not Be Stored"]] call ExileClient_gui_toaster_addTemplateToast;
 };
 (findDisplay 0720) closeDisplay 0;

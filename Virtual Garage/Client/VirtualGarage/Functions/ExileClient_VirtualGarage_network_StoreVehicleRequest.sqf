@@ -57,5 +57,5 @@ if (_storedVehiclesCount < _vehicleLimit) then {
 else
 {
   (findDisplay 0720) closeDisplay 0;
-  ["Whoops",[format["You Already Have Too Many Vehicles For Your Flag Level"]]] call ExileClient_gui_notification_event_addNotification;
-}
+  ["ErrorTitleAndText", ["Virtual Garage", "You Already Have Too Many Vehicles For Your Flag Level"]] call ExileClient_gui_toaster_addTemplateToast;
+};

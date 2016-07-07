@@ -33,6 +33,6 @@ if(_response == "true")then
 }
 else
 {
-  ["Whoops",[format["The Vehicle Could Not Be Retrieved"]]] call ExileClient_gui_notification_event_addNotification;
+  ["ErrorTitleAndText", ["Virtual Garage", "The Vehicle Could Not Be Retrieved"]] call ExileClient_gui_toaster_addTemplateToast;
 };
 (findDisplay 0720) closeDisplay 0;
