@@ -20,16 +20,16 @@ private ['_code', '_function', '_file'];
 }
 forEach
 [
-  ['ExileClient_VirtualGarage_AccessGarage', 'VirtualGarage\Functions\ExileClient_VirtualGarage_AccessGarage.sqf'],
-  ['ExileClient_VirtualGarage_GetNearbyVehicles', 'VirtualGarage\Functions\ExileClient_VirtualGarage_GetNearbyVehicles.sqf'],
-  ['ExileClient_VirtualGarage_network_GetStoredVehiclesRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_GetStoredVehiclesRequest.sqf'],
-  ['ExileClient_VirtualGarage_network_GetStoredVehiclesResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_GetStoredVehiclesResponse.sqf'],
-  ['ExileClient_VirtualGarage_network_RetrieveVehicleRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_RetrieveVehicleRequest.sqf'],
-  ['ExileClient_VirtualGarage_network_RetrieveVehicleResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_RetrieveVehicleResponse.sqf'],
-  ['ExileClient_VirtualGarage_network_StoreVehicleRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_StoreVehicleRequest.sqf'],
-  ['ExileClient_VirtualGarage_network_StoreVehicleResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_StoreVehicleResponse.sqf'],
-  ['ExileClient_VirtualGarage_onNearByVehiclesListSelChanged', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onNearByVehiclesListSelChanged.sqf'],
-  ['ExileClient_VirtualGarage_onStoredVehiclesListSelChanged', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onStoredVehiclesListSelChanged.sqf'],
-  ['ExileClient_VirtualGarage_onVirtualGarageDialogLoad', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onVirtualGarageDialogLoad.sqf'],
-  ['ExileClient_VirtualGarage_VehicleDraw3DIcon', 'VirtualGarage\Functions\ExileClient_VirtualGarage_VehicleDraw3DIcon.sqf']
+    ['ExileClient_VirtualGarage_AccessGarage', 'VirtualGarage\Functions\ExileClient_VirtualGarage_AccessGarage.sqf'],
+    ['ExileClient_VirtualGarage_GetNearbyVehicles', 'VirtualGarage\Functions\ExileClient_VirtualGarage_GetNearbyVehicles.sqf'],
+    ['ExileClient_VirtualGarage_network_GetStoredVehiclesRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_GetStoredVehiclesRequest.sqf'],
+    ['ExileClient_VirtualGarage_network_GetStoredVehiclesResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_GetStoredVehiclesResponse.sqf'],
+    ['ExileClient_VirtualGarage_network_RetrieveVehicleRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_RetrieveVehicleRequest.sqf'],
+    ['ExileClient_VirtualGarage_network_RetrieveVehicleResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_RetrieveVehicleResponse.sqf'],
+    ['ExileClient_VirtualGarage_network_StoreVehicleRequest', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_StoreVehicleRequest.sqf'],
+    ['ExileClient_VirtualGarage_network_StoreVehicleResponse', 'VirtualGarage\Functions\ExileClient_VirtualGarage_network_StoreVehicleResponse.sqf'],
+    ['ExileClient_VirtualGarage_onNearByVehiclesListSelChanged', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onNearByVehiclesListSelChanged.sqf'],
+    ['ExileClient_VirtualGarage_onStoredVehiclesListSelChanged', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onStoredVehiclesListSelChanged.sqf'],
+    ['ExileClient_VirtualGarage_onVirtualGarageDialogLoad', 'VirtualGarage\Functions\ExileClient_VirtualGarage_onVirtualGarageDialogLoad.sqf'],
+    ['ExileClient_VirtualGarage_VehicleDraw3DIcon', 'VirtualGarage\Functions\ExileClient_VirtualGarage_VehicleDraw3DIcon.sqf']
 ];

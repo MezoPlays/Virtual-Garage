@@ -44,7 +44,8 @@ try
 	_position = (getPos _playerObject) findEmptyPosition [20, 175, _vehicleClass];
 	_direction = (random 360);
 	_SpawnPos = getNumber (missionconfigfile >> "VirtualGarageSettings" >> "VirtualGarage_VehicleSpawnPos");
-	if (_SpawnPos == 1) then {
+	if (_SpawnPos == 1) then
+	{
 	    _position = [_vehiclePosX,_vehiclePosY,_vehiclePosZ];
 		_direction = [[_vehicleVectorDirX,_vehicleVectorDirY,_vehicleVectorDirZ],[_vehicleVectorUpX,_vehicleVectorUpY,_vehicleVectorUpZ]];
 	};
@@ -54,7 +55,8 @@ try
 	};
 	_vehicleObject = [_vehicleClass, _position, _direction, true, _pinCode] call ExileServer_object_vehicle_createPersistentVehicle;
 	_vehicleObject setVariable ["ExileOwnerUID", (getPlayerUID _playerObject)];
-	for '_i' from 0 to (count _textures)-1 do {
+	for '_i' from 0 to (count _textures)-1 do
+	{
 		_tex = _textures select _i;
 	    _vehicleObject setObjectTextureGlobal [_i, _tex];
 	};
@@ -77,7 +79,8 @@ try
 		};
 	};
 	_GivePlayerPinCode = getNumber (missionconfigfile >> "VirtualGarageSettings" >> "VirtualGarage_GivePlayerPinCode");
-	if (_GivePlayerPinCode == 1) then {
+	if (_GivePlayerPinCode == 1) then
+	{
 		_msg = Format["Vehicle Successfully Retrieved PIN Code:%1",_pinCode];
 		[_sessionID, "toastRequest", ["SuccessTitleOnly", [_msg]]] call ExileServer_system_network_send_to;
 	}
@@ -97,5 +100,5 @@ try
 catch
 {
 	[_exception,"Virtual Garage Spawn Vehicle Error"] call ExileServer_VirtualGarage_utils_diagLog;
-  	[_sessionID, "RetrieveVehicleResponse", ["false",_vehicleObject]] call ExileServer_system_network_send_to;
+	[_sessionID, "RetrieveVehicleResponse", ["false",_vehicleObject]] call ExileServer_system_network_send_to;
 };
